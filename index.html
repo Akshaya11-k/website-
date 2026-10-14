@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K. Akshaya | Cloud Computing Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #080d1d;
+            color: #f4f7ff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #111a30;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #79e7ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #79e7ff;
+        }
+
+        section {
+            padding: 65px 8%;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .hero-content {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 6vw, 65px);
+            margin: 15px 0;
+        }
+
+        .hero h1 span {
+            color: #79e7ff;
+        }
+
+        .hero p {
+            color: #a8b4ce;
+            font-size: 18px;
+            max-width: 650px;
+        }
+
+        .tag {
+            color: #79e7ff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .profile-card {
+            flex: 0 1 300px;
+            background: #111a30;
+            border: 1px solid #293753;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .cloud {
+            font-size: 100px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 22px;
+            border-radius: 10px;
+            background: #79e7ff;
+            color: #080d1d;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: white;
+        }
+
+        h2.section-title {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .description {
+            color: #a8b4ce;
+            margin-bottom: 25px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #111a30;
+            border: 1px solid #293753;
+            border-radius: 15px;
+            padding: 25px;
+        }
+
+        .card h3 {
+            color: #79e7ff;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #a8b4ce;
+        }
+
+        .marks {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .mark-card {
+            background: #111a30;
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid #293753;
+        }
+
+        .mark-card h3 {
+            color: #a8b4ce;
+        }
+
+        .mark-card h2 {
+            color: #79e7ff;
+            font-size: 35px;
+            margin-top: 10px;
+        }
+
+        .terminal {
+            background: #050912;
+            border: 1px solid #293753;
+            border-radius: 15px;
+            overflow: hidden;
+            margin-top: 25px;
+        }
+
+        .terminal-header {
+            background: #18233a;
+            padding: 12px 18px;
+            color: #a8b4ce;
+        }
+
+        .terminal pre {
+            padding: 25px;
+            color: #d8e7ff;
+            white-space: pre-wrap;
+            overflow-wrap: anywhere;
+            font-size: 14px;
+        }
+
+        .green {
+            color: #8af2b0;
+        }
+
+        .cyan {
+            color: #79e7ff;
+        }
+
+        .contact-box {
+            background: #111a30;
+            border: 1px solid #293753;
+            border-radius: 15px;
+            padding: 30px;
+        }
+
+        .contact-box p {
+            margin: 12px 0;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-box a {
+            color: #79e7ff;
+        }
+
+        footer {
+            background: #111a30;
+            color: #a8b4ce;
+            text-align: center;
+            padding: 22px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 10px 0 0;
+                display: inline-block;
+            }
+
+            section {
+                padding: 45px 6%;
+            }
+
+            .hero {
+                padding-top: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>K. AKSHAYA</h2>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <div class="tag">Student | Future Cloud Engineer</div>
+
+        <h1>Hello, I'm <span>K. Akshaya</span></h1>
+
+        <p>
+            I am studying B.Sc. Computer Science at Bishop Heber College,
+            Trichy. My goal is to become a Cloud Computing Engineer and
+            build, automate, secure, and manage virtual IT infrastructure
+            and cloud-native systems.
+        </p>
+
+        <a href="#project" class="button">Explore My Project</a>
+    </div>
+
+    <div class="profile-card">
+        <div class="cloud">☁️</div>
+        <h2>Cloud Computing</h2>
+        <p>Learning today, building tomorrow.</p>
+        <br>
+        <p>Python | C++ | Cloud Technology</p>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <p class="description">
+        I am a Computer Science student who enjoys learning programming
+        and exploring modern technologies. I aim to develop my technical
+        skills and build a career in cloud computing.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🎓 Education</h3>
+            <p>Bishop Heber College, Trichy</p>
+            <p>B.Sc. Computer Science</p>
+            <p>Batch: 2026–2029</p>
+        </div>
+
+        <div class="card">
+            <h3>☁️ Career Goal</h3>
+            <p>To become a Cloud Computing Engineer and work with
+            cloud infrastructure, automation, and security.</p>
+        </div>
+
+        <div class="card">
+            <h3>💡 Interests</h3>
+            <p>Programming, technology, problem-solving, and
+            cloud-native systems.</p>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">My Skills</h2>
+
+    <p class="description">
+        My current programming skills and future technical interests.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🐍 Python</h3>
+            <p>Learning programming logic, problem-solving,
+            and automation fundamentals.</p>
+        </div>
+
+        <div class="card">
+            <h3>💻 C++</h3>
+            <p>Practising programming fundamentals,
+            algorithms, and logical thinking.</p>
+        </div>
+
+        <div class="card">
+            <h3>☁️ Cloud Computing</h3>
+            <p>Career focus: building, automating, securing,
+            and managing virtual IT infrastructure and
+            cloud-native systems.</p>
+        </div>
+    </div>
+</section>
+
+<section id="education">
+    <h2 class="section-title">Academic Achievements</h2>
+
+    <p class="description">
+        My school academic scores.
+    </p>
+
+    <div class="marks">
+        <div class="mark-card">
+            <h3>10th Standard</h3>
+            <h2>470/500</h2>
+        </div>
+
+        <div class="mark-card">
+            <h3>12th Standard</h3>
+            <h2>490/600</h2>
+        </div>
+    </div>
+</section>
+
+<section id="project">
+    <h2 class="section-title">My First Project</h2>
+
+    <div class="card">
+        <h3>Student Management System</h3>
+
+        <p>
+            A C programming project designed to manage student
+            registration, profiles, courses, attendance, marks,
+            grades, and rankings.
+        </p>
+
+        <div class="terminal">
+            <div class="terminal-header">
+                ● ● ● &nbsp; Student Management System — Output Preview
+            </div>
+
+            <pre><span class="cyan">===================================</span>
+       STUDENT MANAGEMENT SYSTEM
+<span class="cyan">===================================</span>
+---------- LOGIN MODULE ----------
+(hint: username 'admin', password 'admin123')
+
+Username: <span class="green">admin</span>
+Password: <span class="green">admin123</span>
+
+<span class="green">Login successful! Welcome, admin.</span>
+
+<span class="cyan">===================================</span>
+             MAIN MENU
+<span class="cyan">===================================</span>
+1. Student Registration Module
+2. Student Profile Module
+3. Course Management Module
+4. Attendance Management Module
+5. Marks Management Module
+6. Exit Module
+<span class="cyan">===================================</span>
+Enter your choice: _</pre>
+        </div>
+
+        <p style="margin-top: 15px; color: #a8b4ce;">
+            Note: This is a text-style preview based on the attached
+            C program's output statements, not a captured runtime screenshot.
+        </p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <p class="description">
+        Feel free to connect with me for learning and collaboration.
+    </p>
+
+    <div class="contact-box">
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:akshayakumaresan11@gmail.com">
+                akshayakumaresan11@gmail.com
+            </a>
+        </p>
+
+        <p>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/akshaya-k-785894424/"
+               target="_blank" rel="noopener noreferrer">
+                Visit My LinkedIn Profile
+            </a>
+        </p>
+
+        <p><strong>College:</strong> Bishop Heber College, Trichy</p>
+
+        <p><strong>Batch:</strong> 2026–2029</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 K. Akshaya | Cloud Computing Portfolio</p>
+</footer>
+
+</body>
+</html>
